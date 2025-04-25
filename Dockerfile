@@ -1,23 +1,3 @@
-# FROM continuumio/miniconda3
-
-# # สร้าง working directory
-# WORKDIR /app
-
-# # คัดลอกไฟล์ environment.yaml เข้าไปใน container
-# COPY environment.yaml .
-
-# # สร้างและ activate conda environment
-# RUN conda env create -f environment.yaml
-# SHELL ["conda", "run", "-n", "rayonet", "/bin/bash", "-c"]
-
-# # คัดลอก source code ทั้งหมดเข้าไป
-# COPY . .
-
-# # คอมไพล์ extension modules
-# RUN python setup.py build_ext --inplace
-
-# CMD ["conda", "run", "--no-capture-output", "-n", "rayonet", "python", "demo/demo.py"]
-
 
 FROM continuumio/miniconda3
 
