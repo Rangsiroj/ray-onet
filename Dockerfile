@@ -1,4 +1,3 @@
-# Hi I'm gay
 FROM continuumio/miniconda3
 
 WORKDIR /app
