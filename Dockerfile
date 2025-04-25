@@ -1,22 +1,5 @@
 # FROM continuumio/miniconda3
 
-# # ตั้ง working directory
-# WORKDIR /app
-
-# # คัดลอกไฟล์ทั้งหมดเข้า container
-# COPY . .
-
-# # ติดตั้ง environment จาก environment.yml
-# RUN conda env create -f environment.yaml
-
-# # ตั้ง shell ให้รันคำสั่งต่าง ๆ ผ่าน conda env ที่สร้าง
-# SHELL ["conda", "run", "-n", "rayonet", "/bin/bash", "-c"]
-
-# # สั่งให้รัน demo.py (หรือแก้เป็น script ที่ต้องการได้)
-# CMD ["python", "train.py"]
-
-# FROM continuumio/miniconda3
-
 # # สร้าง working directory
 # WORKDIR /app
 
